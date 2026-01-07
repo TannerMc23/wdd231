@@ -1,0 +1,144 @@
+/* ----------------- COLOR SCHEME ---------------------
+Navy
+Tomato
+*/
+
+/* ----------------- SITE WIDE ---------------------*/
+*{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ----------------- HEADER ---------------------*/
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: navy;
+}
+/* ----------------- HEADER NAVIGATION ---------------------*/
+.hamburger{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: navy;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+/* ----------------- NAVIGATION ---------------------*/
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a{
+    display: block;
+    padding: 0.8rem 10px;
+    color: navy;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current{
+    background-color: #eee;
+}
+
+.navigation a:hover{
+    background-color: tomato;
+}
+
+
+h1{
+    margin-left: 10px;
+    color: navy;
+}
+
+/* ----------------- ABOUT ME ---------------------*/
+h2{
+    background-color: tomato;
+    width: 400px;
+}
+/* ----------------- COURSES ---------------------*/
+
+.course-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.course-card{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: tomato;
+}
+
+.course-card.completed{
+    background-color: green;
+    color: white;
+    border-color: navy;
+}
+/* ----------------- FOOTER ---------------------*/
+footer{
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+
+}
+
+.social img{
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover{
+    background-color: tomato;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanner McMillan | Home Page</title>
+    <meta name="description" content="Tanner McMillan | WDD 231 | Home Page Activity">
+    <meta name="author" content="Tanner McMillan">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Tanner McMillan</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-btn" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber of Commerce</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2 class="about">About Me</h2>
+            <p>Hello my name is Tanner McMillan. I am 25 years old, and my wife and I live in 
+                Ogden, Utah with our 2 boys. Our oldest is 2 years old and our youngest is
+                almost 3 months old. I love spending time with my family and playing disc golf
+                competitively. I have loved computers and have began to love programming and
+                web design.
+            </p>
+        </section>
+        <section>
+            <h2 class="photo">Student Photo</h2>
+            <img src="images/profile-pic.jpg" alt="Tanner McMillan Profile Picture">
+        </section>
+        <section>
+            <h2 class="courses">Web Certificate Courses</h2>
+            <section class="course-controls">
+                <button id="btnAll">All Courses</button>
+                <button id="btnWDD">WDD Courses</button>
+                <button id="btnCSE">CSE Courses</button>
+            </section>
+            <section id="courseCards" class="course-grid"></section>
+            <p id="creditTotal"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tanner-mcmillan-043a56310/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/TannerMc23" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+        </div>
+        <p>©️<span id="currentyear"></span>🥏Tanner McMillan🥏 Ogden, Utah</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
