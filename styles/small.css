@@ -85,17 +85,76 @@ h1{
     color: navy;
 }
 
-/* ----------------- ABOUT ME ---------------------*/
+/* ----------------- HEADINGS IN MAIN ---------------------*/
 h2{
     background-color: tomato;
-    width: 400px;
+    width: 100%;
+}
+
+main{
+    padding: 0 10px;
+}
+
+main section{
+    background-color: #e6e6e6;
+    margin-bottom: 1rem;
+}
+
+main section > h2{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+main section:nth-of-type(1) p{
+    padding: 10px;
+    margin: 0;
+}
+
+main section:nth-of-type(2) img{
+    display: block;
+    width: 90%;
+    max-width: 250px;
+    margin: 10px auto;
 }
 /* ----------------- COURSES ---------------------*/
+
+.course-controls{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10px;
+}
+
+.course-controls button{
+    width: 100%;
+}
+
+.button{
+    width: 290px;
+    padding: 5px;
+    border: 1px solid #eee;
+    color: navy;
+}
+
+.button:hover{
+    background-color: tomato;
+    border: 1px solid navy;
+    cursor: pointer;
+}
 
 .course-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+.course-card:hover{
+    transform: scale(1.1);
 }
 
 .course-card{
@@ -109,6 +168,11 @@ h2{
     background-color: green;
     color: white;
     border-color: navy;
+}
+
+#creditTotal{
+    text-align: center;
+    padding-bottom: 10px;
 }
 /* ----------------- FOOTER ---------------------*/
 footer{
