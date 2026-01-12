@@ -11,7 +11,7 @@ const now = new Date();
 yearSpan.textContent = now.getFullYear();
 
 const lastmod = document.getElementById('lastmodified');
-lastmod.textContent = `Last modified: ${document.lastModified}`; 
+lastmod.textContent = `Last modified: ${document.lastModified}`;
 
 // Course Description
 const courses = [
@@ -97,14 +97,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const courseContainer = document.getElementById("courseCards");
     const creditTotal = document.getElementById("creditTotal");
 
-    function displayCourses(courseList){
+    function displayCourses(courseList) {
         courseContainer.innerHTML = "";
 
         courseList.forEach(course => {
             const card = document.createElement("div");
             card.classList.add("course-card");
 
-            if (course.completed){
+            if (course.completed) {
                 card.classList.add("completed");
             }
 
@@ -125,16 +125,16 @@ document.addEventListener("DOMContentLoaded", () => {
         creditTotal.textContent = `Total Credits: ${totalCredits}`;
     }
 
-    document.getElementById("btnAll").addEventListener("click", () =>{
+    document.getElementById("btnAll").addEventListener("click", () => {
         displayCourses(courses);
     });
 
-    document.getElementById("btnWDD").addEventListener("click", () =>{
+    document.getElementById("btnWDD").addEventListener("click", () => {
         const wddCourses = courses.filter(course => course.subject === "WDD");
         displayCourses(wddCourses);
     });
 
-    document.getElementById("btnCSE").addEventListener("click", () =>{
+    document.getElementById("btnCSE").addEventListener("click", () => {
         const cseCourses = courses.filter(course => course.subject === "CSE");
         displayCourses(cseCourses);
     });

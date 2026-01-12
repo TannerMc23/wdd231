@@ -4,13 +4,13 @@ Tomato
 */
 
 /* ----------------- SITE WIDE ---------------------*/
-*{ 
-    font-family: 'roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+    font-family: 'roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
 
 /* ----------------- HEADER ---------------------*/
-header{
+header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
@@ -19,19 +19,20 @@ header{
     column-gap: 8px;
 }
 
-header img{
+header img {
     display: block;
     width: 100%;
     height: auto;
     padding-bottom: 5px;
 }
 
-header span{
+header span {
     font-size: 1.2rem;
     color: navy;
 }
+
 /* ----------------- HEADER NAVIGATION ---------------------*/
-.hamburger{
+.hamburger {
     background: none;
     border: none;
     font-size: 2rem;
@@ -40,30 +41,30 @@ header span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.hamburger::before{
+.hamburger::before {
     content: "\2630";
 }
 
-.hamburger.show::before{
+.hamburger.show::before {
     content: "\00D7";
 }
 
 /* ----------------- NAVIGATION ---------------------*/
-.navigation{
+.navigation {
     display: none;
 }
 
-.navigation.show{
+.navigation.show {
     display: block;
 }
 
-.navigation ul{
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navigation a{
+.navigation a {
     display: block;
     padding: 0.8rem 10px;
     color: navy;
@@ -71,35 +72,35 @@ header span{
     border-bottom: solid 1px #ddd;
 }
 
-.navigation li.current{
+.navigation li.current {
     background-color: #eee;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     background-color: tomato;
 }
 
 
-h1{
+h1 {
     margin-left: 10px;
     color: navy;
 }
 
 /* ----------------- HEADINGS IN MAIN ---------------------*/
-h2{
+h2 {
     width: 100%;
 }
 
-main{
+main {
     padding: 0 10px;
 }
 
-main section{
+main section {
     background-color: #e6e6e6;
     margin-bottom: 1rem;
 }
 
-main section > h2{
+main section>h2 {
     background-color: navy;
     color: white;
     text-align: center;
@@ -107,44 +108,45 @@ main section > h2{
     margin: 0;
 }
 
-main section:nth-of-type(1) p{
+main section:nth-of-type(1) p {
     padding: 10px;
     margin: 0;
 }
 
-main section:nth-of-type(2) img{
+main section:nth-of-type(2) img {
     display: block;
     width: 90%;
     max-width: 250px;
     margin: 10px auto;
 }
+
 /* ----------------- COURSES ---------------------*/
 
-.course-controls{
+.course-controls {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     padding: 10px;
 }
 
-.course-controls button{
+.course-controls button {
     width: 100%;
 }
 
-.button{
+.button {
     width: 290px;
     padding: 5px;
     border: 1px solid #eee;
     color: navy;
 }
 
-.button:hover{
+.button:hover {
     background-color: tomato;
     border: 1px solid navy;
     cursor: pointer;
 }
 
-.course-grid{
+.course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
@@ -152,41 +154,42 @@ main section:nth-of-type(2) img{
     padding: 10px;
 }
 
-.course-card:hover{
+.course-card:hover {
     transform: scale(1.1);
 }
 
-.course-card{
+.course-card {
     padding: 1rem;
     border-radius: 10px;
     border: 2px solid black;
     background-color: tomato;
 }
 
-.course-card.completed{
+.course-card.completed {
     background-color: green;
     color: white;
     border-color: navy;
 }
 
-#creditTotal{
+#creditTotal {
     text-align: center;
     padding-bottom: 10px;
 }
+
 /* ----------------- FOOTER ---------------------*/
-footer{
+footer {
     background-color: #eee;
     padding: 1rem 10px;
     text-align: center;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     column-gap: 8px;
 }
 
-.social a{
+.social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,11 +200,11 @@ footer{
 
 }
 
-.social img{
+.social img {
     width: 22px;
     height: 22px;
 }
 
-.social a:hover{
+.social a:hover {
     background-color: tomato;
 }
