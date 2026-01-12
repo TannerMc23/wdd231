@@ -1,0 +1,28 @@
+{
+    "family_name": "McMillan",
+    "move_in_date": "06-10-2025",
+    "number_of_people": 4,
+    "visited_by-bishop": true,
+    "family_members": [
+        {
+            "name": "Tanner McMillan",
+            "gender": "Male",
+            "birthdate": "05-07-2000"
+        },
+        {
+            "name": "Matsyn McMillan",
+            "gender": "Female",
+            "birthdate": "05-25-2002"
+        },
+        {
+            "name": "Boston McMillan",
+            "gender": "Male",
+            "birthdate": "01-01-2024"
+        },
+        {
+            "name": "Hudson McMillan",
+            "gender": "Male",
+            "birthdate": "10-13-2025"
+        }
+    ]
+}
