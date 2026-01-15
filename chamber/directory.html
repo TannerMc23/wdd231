@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Directory</title>
+    <meta name="description"
+        content="WDD 231 | Tanner McMillan | Directory page for Chamber of Commerce in Clearfield, Utah">
+    <meta name="author" content="Tanner McMillan">
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description"
+        content="Facebook profile for Tanner McMillan. Shows who I am and the many memories I have made.">
+    <meta property="og:image" content="images/facebook.svg">
+    <meta property="url" content="https://www.facebook.com/tanner.mcmillan.395/">
+    <link rel="icon" href="images/clearfield-chamber-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles/directory.css">
+        <link rel="stylesheet" href="styles/reset.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/clearfield-chamber-logo.svg" alt="Clearfield Chamber of Commerce" width="512" height="512">
+        <span>Clearfield Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-btn" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="view-buttons">
+            <button id="gridBtn">Grid</button>
+            <button id="listBtn">List</button>
+        </div>
+        <div id="cards" class="grid"></div>
+    </main>
+    <footer>
+        <div>
+            <h3>Clearfield Chamber of Commerce</h3>
+            <p>55 S State Street</p>
+            <p>Clearfield UT, 84015</p>
+            <p>tmcmillan@byupathway.edu</p>
+            <p>123-456-7890</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tanner-mcmillan-043a56310/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/TannerMc23" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Tanner McMillan</p>
+            <p>©️ <span id="currentyear"></span> Clearfield Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Clearfield Utah Chamber of Commerce">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="248" fill="#0B3D2E" stroke="#C9B037" stroke-width="16"></circle>
+
+  <!-- Rising sun -->
+  <circle cx="256" cy="220" r="60" fill="#C9B037"></circle>
+
+  <!-- Mountains -->
+  <path d="M96 336 L200 200 L304 336 Z" fill="#C0C0C0"></path>
+  <path d="M208 336 L312 176 L416 336 Z" fill="#000000"></path>
+
+  <!-- Ground line -->
+  <rect x="96" y="336" width="320" height="20" fill="#C9B037"></rect>
+
+  <!-- City name -->
+  <text x="256" y="404" text-anchor="middle" font-size="56" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#FFFFFF" letter-spacing="2">
+    Clearfield
+  </text>
+
+  <!-- State -->
+  <text x="256" y="444" text-anchor="middle" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="500" fill="#C0C0C0" letter-spacing="4">
+    UTAH
+  </text>
+</svg>

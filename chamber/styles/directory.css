@@ -1,0 +1,268 @@
+* {
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------Header--------------------------*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #eee;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #0B3D2E;
+}
+
+/*---------------------Nav and Hamburger Dropdown--------------------------*/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #0B3D2E;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #0B3D2E;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: gold;
+    color: black;
+    font-weight: bolder;
+}
+
+/*---------------------Footer--------------------------*/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: gold;
+}
+
+/*---------------------Main--------------------------*/
+.view-buttons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-buttons button {
+    padding: 0 0.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #0B3D2E;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.view-buttons button:hover {
+    opacity: 0.9;
+}
+
+#cards {
+    padding: 1rem;
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#cards.list {
+    display: block;
+    padding: 1rem;
+}
+
+section.card {
+    background-color: gold;
+    border: 2px solid #0B3D2E;
+    padding: 1rem;
+    border: 8px;
+    text-align: center;
+}
+
+section.card h2 {
+    margin: 0.5rem 0;
+}
+
+section.card p {
+    margin: 0.25rem 0;
+}
+
+section.card p:last-of-type {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+#cards.list section.card {
+    border-left: 6px solid #0B3D2E;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    text-align: left;
+    align-items: start;
+}
+
+section.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+#cards.list section.card img {
+    margin: 0;
+}
+
+section.card a {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    margin-top: 0.5rem;
+    color: #0B3D2E;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+section.card a:hover {
+    text-decoration: underline;
+}
+
+#cards.list section.card a {
+    display: block;
+}
+
+
+/*---------------------Larger screen--------------------------*/
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    #cards.grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #cards.list section.card {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .card img {
+        max-height: 150px;
+    }
+}

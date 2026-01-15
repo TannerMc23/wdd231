@@ -1,0 +1,76 @@
+{
+    "companies": [
+        {
+            "company_name": "Tee It Up Indoor",
+            "company_address": "540 E 1700 S Suite 103, Clearfield, UT 84015",
+            "phone_number": "(801) 726-6140",
+            "website_url": "https://www.teeitupindoor.com/",
+            "image_file": "tee-it-up-logo.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Goldenwest Credit Union",
+            "company_address": "410 E 1700 S, Clearfield, UT 84015",
+            "phone_number": "(800) 283-4550",
+            "website_url": "https://www.gwcu.org/locations/branches/north-davis-branch-clearfield-utah",
+            "image_file": "goldenwest-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Winegars Super Markets",
+            "company_address": "1080 W 300 N, Clearfield, UT 84015",
+            "phone_number": "(801) 774-9000",
+            "website_url": "https://www.winegars.com/",
+            "image_file": "winegars-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Thatcher Brook Rehabilitation",
+            "company_address": "1795 Chelemes Way, Clearfield, UT 84015",
+            "phone_number": "(801) 614-5700",
+            "website_url": "https://thatcherbrookrehab.com/",
+            "image_file": "thatcher-brook-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Universal Rent-All",
+            "company_address": "735 N Main St, Clearfield, UT 84015",
+            "phone_number": "(801) 825-7347",
+            "website_url": "https://www.universalrentall.com/",
+            "image_file": "universal-rent-all-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Lifetime Products",
+            "company_address": "325 S 775 W, Clearfield, UT 84015",
+            "phone_number": "(801) 776-1532",
+            "website_url": "https://www.lifetime.com/",
+            "image_file": "lifetime-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Clearfield Aquatic and Fitness Center",
+            "company_address": "825 State St, Clearfield, UT 84015",
+            "phone_number": "(801) 525-2641",
+            "website_url": "https://clearfield.city/aquatic-and-fitness/",
+            "image_file": "clearfield-aquatic-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "La Choi's Noodles Parlor Aa",
+            "company_address": "325 State St, Clearfield, UT 84015",
+            "phone_number": "(801) 728-9888",
+            "website_url": "http://www.lachoismenu.com/",
+            "image_file": "la-choi-image.png",
+            "membership_level": 1
+        },
+        {
+            "company_name": "Beeline Pest Control",
+            "company_address": "275 W 1700 S, Clearfield, UT 84015",
+            "phone_number": "(801) 544-9200",
+            "website_url": "https://beelinepestcontrol.com/",
+            "image_file": "beeline-image.png",
+            "membership_level": 1
+        }
+    ]
+}
