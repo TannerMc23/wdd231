@@ -1,5 +1,5 @@
 * {
-    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    font-family: "Montserrat", Arial, sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
@@ -93,7 +93,7 @@ footer {
     align-items: center;
     gap: 1rem;
     text-align: center;
-    min-height: 120px;
+    min-height: 180px;
 }
 
 .social {
@@ -169,6 +169,7 @@ section.card {
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
+    will-change: transform;
 }
 
 section.card h2 {
@@ -185,7 +186,9 @@ section.card p:last-of-type {
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
     height: auto;
     margin-bottom: 0.5rem;
 }
@@ -288,5 +291,6 @@ section.card a:hover {
     justify-content: space-around;
     text-align: left;
     gap: 0;
+    min-height: 140px;
 }
 }
