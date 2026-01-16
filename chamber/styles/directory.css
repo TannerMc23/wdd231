@@ -93,6 +93,7 @@ footer {
     align-items: center;
     gap: 1rem;
     text-align: center;
+    min-height: 120px;
 }
 
 .social {
