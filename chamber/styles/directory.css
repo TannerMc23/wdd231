@@ -87,16 +87,18 @@ header span {
 /*---------------------Footer--------------------------*/
 footer {
     background-color: var(--border);
-    padding: 1rem 10px;
+    padding: 1.5rem 1rem;
     display: flex;
-    justify-content: space-around;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
 }
 
 .social {
     display: flex;
     justify-content: center;
-    column-gap: 8px;
+    gap: 12px;
 }
 
 .social a {
@@ -106,7 +108,8 @@ footer {
     width: 44px;
     height: 44px;
     border: #ccc solid 1px;
-    border-radius: 22px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 
 }
 
@@ -117,7 +120,9 @@ footer {
 
 .social a:hover {
     background-color: var(--accent);
+    transform: translateY(-2px);
 }
+
 
 /*---------------------Main--------------------------*/
 h1{
@@ -230,7 +235,7 @@ section.card a:hover {
 
 
 /*---------------------Larger screen--------------------------*/
-@media only screen and (min-width: 38rem) {
+@media (min-width: 38rem) {
 
     header,
     main,
@@ -273,4 +278,16 @@ section.card a:hover {
     .card img {
         max-height: 150px;
     }
+
+    footer {
+    flex-direction: row;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    gap: 0;
+}
+
+
 }
