@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+
+p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#current-temp{
+    font-size: 2rem;
+}
+
+figure{
+    text-align: center;
+    padding: 0;
+}
+
+footer{
+    text-align: center;
+}
