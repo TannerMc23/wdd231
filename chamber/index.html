@@ -19,12 +19,9 @@
     <link rel="icon" href="images/clearfield-chamber-logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/reset.css">
-    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -43,8 +40,56 @@
     </nav>
     <main class="home-main">
         <div class="hero">
-        <img src="images/clearfield-hero-banner-2.webp" alt="View of Clearfield Utah" class="hero image">
-        <button class="hero-btn"><a href="#">Join Today!</a></button>
+            <img src="images/clearfield-hero-banner-2.webp" alt="Clearfield Utah" class="hero-img">
+            <div class="hero-cta">
+                <h1>Where Clearfield Business Thrives.</h1>
+                <a href="#" target="_blank" class="hero-btn">Become a Member</a>
+            </div>
+        </div>
+        <h2>Home</h2>
+        <div class="home-sections-container">
+            <section class="home-events">
+                <h3>Upcoming Events</h3>
+                <article class="event">
+                    <h4>Clearfield Business Expo</h4>
+                    <p><strong>Date:</strong> February 15, 2026</p>
+                    <p><strong>Location:</strong> Clearfield Conference Center</p>
+                    <p>Network with local business owners and explore growth opportunities.</p>
+                </article>
+                <article class="event">
+                    <h4>Chamber Networking Social</h4>
+                    <p><strong>Date:</strong> March 5, 2026</p>
+                    <p><strong>Location:</strong> Main Street Plaza</p>
+                    <p>Meet fellow chamber members and strengthen local connections.</p>
+                </article>
+            </section>
+            <section class="home-weather">
+                <h3>Current Weather</h3>
+                <p id="weather-location">Clearfield, Utah</p>
+                <p id="current-temp">Temperature: -°F</p>
+                <p id="weather-desc">Conditions: -</p>
+                <img id="weather-icon" src="" alt="" width="50" height="50">
+            </section>
+            <section class="home-forecast">
+                <h3>3-day Forecast</h3>
+                <div class="forecast-cards">
+                    <div class="forecast-day">
+                        <p class="forecast-date">Day</p>
+                        <img src="" alt="" width="40" height="40">
+                        <p class="forecast-temp">-°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-date">Day</p>
+                        <img src="" alt="" width="40" height="40">
+                        <p class="forecast-temp">-°F</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-date">Day</p>
+                        <img src="" alt="" width="40" height="40">
+                        <p class="forecast-temp">-°F</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -70,6 +115,7 @@
             <p id="lastmodified"></p>
         </div>
     </footer>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>
