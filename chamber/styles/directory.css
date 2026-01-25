@@ -126,7 +126,7 @@ footer {
 
 
 /*---------------------Main--------------------------*/
-h1{
+.directory-h1 {
     border-bottom: 1px solid var(--border);
 }
 .view-buttons {

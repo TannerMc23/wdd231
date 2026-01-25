@@ -56,8 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 day.querySelector(".forecast-date").textContent = "N/A";
                 day.querySelector(".forecast-temp").textContent = "-°F";
                 const img = day.querySelector("img");
-                img.src = "";
-                img.alt = "";
+                img.removeAttribute("src");
+                img.alt = "Weather data unavailable";
+                img.style.display = "none";
             });
         }
     }
