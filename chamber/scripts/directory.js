@@ -1,103 +1,78 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // ===== YEAR & LAST MODIFIED =====
-    const yearSpan = document.getElementById('currentyear');
-    const now = new Date();
-    yearSpan.textContent = now.getFullYear();
+const yearSpan = document.getElementById('currentyear');
+const now = new Date();
+yearSpan.textContent = now.getFullYear();
 
-    const lastmod = document.getElementById('lastmodified');
-    lastmod.textContent = `Last modified: ${document.lastModified}`;
+const lastmod = document.getElementById('lastmodified');
+lastmod.textContent = `Last modified: ${document.lastModified}`;
 
-    // ===== NAV & HAMBURGER BUTTON =====
-    const navbutton = document.querySelector('#ham-btn');
-    const navbar = document.querySelector('#nav-btn');
+const navbutton = document.querySelector('#ham-btn');
+const navbar = document.querySelector('#nav-btn');
 
-    if (navbutton && navbar) {
-        navbutton.addEventListener('click', () => {
-            navbutton.classList.toggle('show');
-            navbar.classList.toggle('show');
-        });
-    }
-
-    // ===== BUSINESS CARDS =====
-    const cards = document.querySelector('#cards');
-    const gridBtn = document.querySelector('#gridBtn');
-    const listBtn = document.querySelector('#listBtn');
-
-    if (gridBtn && listBtn && cards) {
-        gridBtn.addEventListener('click', () => {
-            cards.classList.add('grid');
-            cards.classList.remove('list');
-        });
-        listBtn.addEventListener('click', () => {
-            cards.classList.add('list');
-            cards.classList.remove('grid');
-        });
-    }
-
-    // ===== WEATHER =====
-    const currentTemp = document.querySelector("#current-temp");
-    const weatherDesc = document.querySelector("#weather-desc");
-    const weatherIcon = document.querySelector("#weather-icon");
-    const forecastDays = document.querySelectorAll(".forecast-day");
-
-    const myKey = "29e1cce74baaef393d4c3d7c4800cfb5";
-    const lat = 41.1108;
-    const lon = -112.02494;
-
-    const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=imperial`;
-    const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${myKey}&units=imperial`;
-
-    async function getCurrentWeather() {
-        try {
-            const response = await fetch(currentWeatherURL);
-            if (!response.ok) throw new Error("Network response not OK");
-            const data = await response.json();
-
-            currentTemp.textContent = `Temperature: ${Math.round(data.main.temp)}°F`;
-            weatherDesc.textContent = `Condition: ${data.weather[0].description}`;
-            weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-            weatherIcon.alt = data.weather[0].description;
-
-        } catch (error) {
-            console.error("Error fetching current weather:", error);
-            currentTemp.textContent = "Weather data not available";
-            weatherDesc.textContent = "";
-        }
-    }
-
-    async function getForecast() {
-        try {
-            const response = await fetch(forecastURL);
-            if (!response.ok) throw new Error("Network response not OK");
-            const data = await response.json();
-
-            const dailyForecasts = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
-
-            dailyForecasts.forEach((forecast, i) => {
-                const dayName = new Date(forecast.dt * 1000).toLocaleDateString("en-US", { weekday: "short" });
-                const temp = Math.round(forecast.main.temp);
-                const icon = forecast.weather[0].icon;
-                const desc = forecast.weather[0].description;
-
-                forecastDays[i].querySelector(".forecast-date").textContent = dayName;
-                forecastDays[i].querySelector(".forecast-temp").textContent = `${temp}°F`;
-                const img = forecastDays[i].querySelector("img");
-                img.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-                img.alt = desc;
-            });
-
-        } catch (error) {
-            console.error("Error fetching forecast:", error);
-            forecastDays.forEach(day => {
-                day.querySelector(".forecast-date").textContent = "N/A";
-                day.querySelector(".forecast-temp").textContent = "-°F";
-                const img = day.querySelector("img");
-                img.src = "";
-                img.alt = "";
-            });
-        }
-    }
-
-    getCurrentWeather();
-    getForecast();
+navbutton.addEventListener('click', () => {
+    navbutton.classList.toggle('show');
+    navbar.classList.toggle('show');
 });
+
+const cards = document.querySelector('#cards');
+const gridBtn = document.querySelector('#gridBtn');
+const listBtn = document.querySelector('#listBtn');
+
+const dataUrl = 'data/members.json';
+
+async function getCompanies() {
+    try {
+        const response = await fetch(dataUrl);
+        const data = await response.json();
+        displayCompanies(data.companies); 
+    } catch (error){
+        console.error('Error fetching company data:', error);
+    }
+}
+
+function displayCompanies (companies) {
+    cards.innerHTML = '';
+
+    companies.forEach(company => {
+        const card = document.createElement('section');
+        card.classList.add('card');
+
+        const img = document.createElement('img');
+        img.src = `images/${company.image_file}`;
+        img.alt = `Logo of ${company.company_name}`;
+        img.loading = 'lazy';
+        img.width = 200;
+        img.height = 200;
+
+        const name = document.createElement('h2');
+        name.textContent = company.company_name;
+
+        const address = document.createElement('p');
+        address.textContent = company.company_address;
+
+        const phone = document.createElement('p');
+        phone.textContent = company.phone_number;
+
+        const link = document.createElement('a');
+        link.href = company.website_url;
+        link.target = '_blank';
+        link.textContent = company.website_url;
+
+        const membership = document.createElement('p');
+        membership.textContent = `Membership Level: ${company.membership_level}`;
+
+        card.append(img, name, address, phone, link, membership);
+        cards.appendChild(card);
+    });
+};
+
+gridBtn.addEventListener('click', () =>{
+    cards.classList.add('grid');
+    cards.classList.remove('list');
+});
+
+listBtn.addEventListener('click', () =>{
+    cards.classList.add('list');
+    cards.classList.remove('grid');
+});
+
+getCompanies();
