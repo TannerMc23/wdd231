@@ -261,6 +261,7 @@ section.card a:hover {
     background: rgba(0, 0, 0, 0.55);
     padding: 36px 44px;
     border-radius: 18px;
+    color: #fff;
 }
 
 .hero-cta h1 {
