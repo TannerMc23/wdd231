@@ -76,3 +76,4 @@ listBtn.addEventListener('click', () =>{
 });
 
 getCompanies();
+
