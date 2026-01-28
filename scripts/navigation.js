@@ -96,6 +96,7 @@ const courses = [
 document.addEventListener("DOMContentLoaded", () => {
     const courseContainer = document.getElementById("courseCards");
     const creditTotal = document.getElementById("creditTotal");
+    const courseDetails = document.getElementById("courseDetails");
 
     function displayCourses(courseList) {
         courseContainer.innerHTML = "";
@@ -113,6 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <h4>${course.title}</h4>
             <p><strong>Credits:</strong> ${course.credits}</p>
             `;
+            card.addEventListener("click", () => {
+                displayCourseDetails(course);
+            });
 
             courseContainer.appendChild(card);
         });
@@ -139,6 +143,34 @@ document.addEventListener("DOMContentLoaded", () => {
         displayCourses(cseCourses);
     });
 
-
     displayCourses(courses);
+
+    //POP-UP
+     function displayCourseDetails(course) {
+        courseDetails.innerHTML = `
+            <button id="closeModal">❌</button>
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        `;
+
+        courseDetails.showModal();
+
+        const closeBtn = document.getElementById("closeModal");
+
+        closeBtn.addEventListener("click", () => {
+            courseDetails.close();
+        });
+
+        courseDetails.addEventListener("click", (event) => {
+            if (event.target === courseDetails) {
+                courseDetails.close();
+            }
+        });
+    }
 });
+
+//POP-UP

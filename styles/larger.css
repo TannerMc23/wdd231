@@ -68,4 +68,22 @@
         width: 100%;
     }
 
+    dialog {
+        max-width: 650px;
+        padding: 2rem;
+    }
+
+    dialog h2 {
+        font-size: 1.6rem;
+    }
+
+    dialog h3 {
+        font-size: 1.2rem;
+    }
+
+    dialog p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
 }
