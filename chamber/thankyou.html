@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/reset.css">
     <script src="scripts/directory.js" defer></script>
-
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -50,24 +50,6 @@
         <p><strong>Business:</strong> <span id="business"></span></p>
         <p><strong>Date Submitted:</strong> <span id="timestamp"></span></p>
     </main>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-
-        function formatDate(isoString) {
-            const date = new Date(isoString);
-            return date.toLocaleString("en-US", {
-                dateStyle: "long",
-                timeStyle: "short"
-            });
-        }
-
-        ["fname", "lname", "email", "phone", "business"].forEach(id => {
-            document.getElementById(id).textContent = params.get(id);
-        });
-
-        const ts = params.get("timestamp");
-        document.getElementById("timestamp").textContent = formatDate(ts);
-    </script>
     <footer>
         <div>
             <h2>Clearfield Chamber of Commerce</h2>

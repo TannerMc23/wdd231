@@ -13,6 +13,11 @@ navbutton.addEventListener('click', () => {
     navbar.classList.toggle('show');
 });
 
+const hiddenTimestamp = document.getElementById("timestamp");
+if (hiddenTimestamp) {
+    hiddenTimestamp.value = new Date().toISOString();
+}
+
 const cards = document.querySelector('#cards');
 const gridBtn = document.querySelector('#gridBtn');
 const listBtn = document.querySelector('#listBtn');
