@@ -23,13 +23,13 @@ async function getCompanies() {
     try {
         const response = await fetch(dataUrl);
         const data = await response.json();
-        displayCompanies(data.companies); 
-    } catch (error){
+        displayCompanies(data.companies);
+    } catch (error) {
         console.error('Error fetching company data:', error);
     }
 }
 
-function displayCompanies (companies) {
+function displayCompanies(companies) {
     cards.innerHTML = '';
 
     companies.forEach(company => {
@@ -65,15 +65,14 @@ function displayCompanies (companies) {
     });
 };
 
-gridBtn.addEventListener('click', () =>{
+gridBtn.addEventListener('click', () => {
     cards.classList.add('grid');
     cards.classList.remove('list');
 });
 
-listBtn.addEventListener('click', () =>{
+listBtn.addEventListener('click', () => {
     cards.classList.add('list');
     cards.classList.remove('grid');
 });
 
 getCompanies();
-
