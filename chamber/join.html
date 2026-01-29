@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/reset.css">
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -66,7 +67,8 @@
                 </label>
                 <label for="business">
                     Business / Organization name
-                    <input type="text" name="business" id="business" title="Business Name" required autocomplete="organization">
+                    <input type="text" name="business" id="business" title="Business Name" required
+                        autocomplete="organization">
                 </label>
                 <label for="membership">
                     Membership Level
@@ -89,47 +91,69 @@
             <div class="member-card animate">
                 <h3>NP Membership</h3>
                 <p>Free for non-profits</p>
-                <a href="#" onclick="document.getElementById('npModal').showModal()">View Benefits</a>
+                <a href="#" data-modal="npModal" class="modal-link">View Benefits</a>
             </div>
             <div class="member-card animate">
                 <h3>Bronze Membership</h3>
                 <p>Affordable exposure</p>
-                <a href="#" onclick="document.getElementById('bronzeModal').showModal()">View Benefits</a>
+                <a href="#" data-modal="bronzeModal" class="modal-link">View Benefits</a>
             </div>
             <div class="member-card animate">
                 <h3>Silver Membership</h3>
                 <p>Growth-focused</p>
-                <a href="#" onclick="document.getElementById('silverModal').showModal()">View Benefits</a>
+                <a href="#" data-modal="silverModal" class="modal-link">View Benefits</a>
             </div>
             <div class="member-card animate">
                 <h3>Gold Membership</h3>
                 <p>Maximum visibility</p>
-                <a href="#" onclick="document.getElementById('goldModal').showModal()">View Benefits</a>
+                <a href="#" data-modal="goldModal" class="modal-link">View Benefits</a>
             </div>
         </section>
     </main>
     <dialog id="npModal">
-        <h3>NP Membership Benefits</h3>
-        <p>• Free membership<br>• Event access<br>• Community recognition</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <h2>NP Membership Benefits</h2>
+        <ul>
+            <li>No membership fee</li>
+            <li>Access to member networking events</li>
+            <li>Business directory listing</li>
+            <li>Monthly newsletter</li>
+        </ul>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="bronzeModal">
-        <h3>Bronze Membership Benefits</h3>
-        <p>• Business directory listing<br>• Networking events<br>• Training discounts</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+            <li>Annual membership: $250</li>
+            <li>Business directory listing</li>
+            <li>10% discount on chamber events</li>
+            <li>Quarterly training opportunities</li>
+        </ul>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="silverModal">
-        <h3>Silver Membership Benefits</h3>
-        <p>• Spotlight advertising<br>• Event discounts<br>• Featured promotions</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+            <li>Annual membership: $500</li>
+            <li>Featured directory placement</li>
+            <li>25% discount on chamber events</li>
+            <li>Monthly training workshops</li>
+            <li>Social media promotion</li>
+        </ul>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="goldModal">
-        <h3>Gold Membership Benefits</h3>
-        <p>• Homepage spotlight<br>• Priority advertising<br>• VIP events</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+            <li>Annual membership: $1,000</li>
+            <li>Premium directory placement</li>
+            <li>50% discount on chamber events</li>
+            <li>Exclusive networking events</li>
+            <li>Homepage spotlight advertising</li>
+        </ul>
+        <button class="close-modal">Close</button>
     </dialog>
     <footer>
         <div>
