@@ -563,7 +563,7 @@ dialog::backdrop {
     background: rgba(0, 0, 0, 0.6);
 }
 
-dialog h3 {
+dialog h2 {
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--primary);
     padding-bottom: 0.5rem;
