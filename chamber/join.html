@@ -44,33 +44,33 @@
             <form method="get" action="thankyou.html">
                 <label for="fname">
                     First Name
-                    <input type="text" name="fname" title="First Name" required autocomplete="given-name">
+                    <input type="text" name="fname" id="fname" title="First Name" required autocomplete="given-name">
                 </label>
                 <label for="lname">
                     Last Name
-                    <input type="text" name="lname" title="Last Name" required autocomplete="family-name">
+                    <input type="text" name="lname" id="lname" title="Last Name" required autocomplete="family-name">
                 </label>
                 <label for="orgtitle">
                     Organizational Title
-                    <input type="text" name="orgtitle" title="Organizational Title" required
+                    <input type="text" name="orgtitle" id="orgtitle" title="Organizational Title" required
                         autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
                 </label>
                 <label for="email">
                     Email Address
-                    <input type="email" name="email" title="Email Address" required autocomplete="email"
+                    <input type="email" name="email" id="email" title="Email Address" required autocomplete="email"
                         placeholder="example@business.com">
                 </label>
                 <label for="phone">
                     Mobile phone
-                    <input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel">
+                    <input type="tel" name="phone" id="phone" title="Mobile Phone Number" required autocomplete="tel">
                 </label>
                 <label for="business">
                     Business / Organization name
-                    <input type="text" name="business" title="Business Name" required autocomplete="organization">
+                    <input type="text" name="business" id="business" title="Business Name" required autocomplete="organization">
                 </label>
                 <label for="membership">
                     Membership Level
-                    <select name="membership" title="Membership Level">
+                    <select name="membership" title="Membership Level" id="membership">
                         <option value="np">NP Membership (Free)</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
@@ -79,10 +79,10 @@
                 </label>
                 <label for="description">
                     Business Description
-                    <textarea name="description" title="Business Description"></textarea>
+                    <textarea name="description" title="Business Description" id="description"></textarea>
                 </label>
                 <input type="hidden" name="timestamp" id="timestamp">
-                <input type="submit" value="Apply for Membership">
+                <input type="submit" value="Apply for Membership" id="submit">
             </form>
         </section>
         <section class="membership-cards">
