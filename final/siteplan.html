@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Casual Video Games Worth Playing</title>
+    <meta name="description" content="Site Plan | Casual Video Games Worth Playing | WDD231 | Tanner McMillan">
+    <meta name="author" content="Tanner McMillan">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description"
+        content="Facebook profile for Tanner McMillan. Shows who I am and the many memories I have made.">
+    <meta property="og:image" content="images/facebook.svg">
+    <meta property="url" content="https://www.facebook.com/tanner.mcmillan.395/">
+    <link rel="icon" href="images/controller.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Site Plan: Casual Video Games Worth Playing</h1>
+        <button id="themeToggle" aria-label="Toggle dark mode">
+            🌙 Dark Mode
+        </button>
+    </header>
+    <main>
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>Casual Video Games Worth Playing</strong></p>
+            <p>
+                This site name was chosen because it clearly communicates the focus of the website. It lets visitors
+                immediately know that the site is about recommending video games that are accessible, relaxing, and
+                enjoyable without requiring large time commitments or advanced gaming skills.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>
+                The purpose of this website is to help casual gamers discover video games that fit their lifestyle. The
+                site will showcase games that are easy to learn, can be played in short sessions, and are designed to be
+                relaxing or low-stress. Content will include brief game descriptions, estimated playtime, platform
+                availability, and reasons why each game is considered casual-friendly.
+            </p>
+            <p>
+                The website is not intended to cover competitive esports titles or games that require long,
+                uninterrupted play sessions.
+            </p>
+        </section>
+        <section>
+            <h2>3. Scenarios</h2>
+            <ul>
+                <li>What video games can I play if I only have 20–30 minutes at a time?</li>
+                <li>What are some relaxing or low-stress games I can play after a long day?</li>
+                <li>Are there beginner-friendly games that do not require a lot of gaming experience?</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>4. Color Scheme</h2>
+            <p>The website will use a calm, modern color palette that reflects a relaxing gaming experience.</p>
+            <ul>
+                <li><strong>Primary Color:</strong> #1F2933 – Used for headers, navigation bar, and footer backgrounds.
+                </li>
+                <li><strong>Secondary Color:</strong> #3B82F6 – Used for buttons, links, and highlights.</li>
+                <li><strong>Background Color:</strong> #F9FAFB – Used for the main page background to improve
+                    readability.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>5. Typography</h2>
+            <ul>
+                <li><strong>Headings:</strong> Montserrat – Used for page titles and section headings.</li>
+                <li><strong>Body Text:</strong> Open Sans, sans-serif – Used for paragraphs and descriptions to ensure
+                    readability.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>6. Wireframe</h2>
+            <img src="images/wireframe-desktop-mobile.png" alt="Wireframe for both Desktop and Mobile view" width="800"
+                height="500" class="wireframe">
+            <p>
+                These wireframes represent layout structure only and do not include final styling or content.
+            </p>
+        </section>
+        <section>
+            <h2>7. Light and Dark Mode Feature</h2>
+            <p>
+                This website includes a light and dark mode toggle to improve user experience and accessibility.
+                Light mode provides a clean, bright interface that is easy to read in well-lit environments,
+                while dark mode offers a low-light alternative that reduces eye strain and adds visual interest.
+            </p>
+            <p>
+                The theme toggle allows users to switch between modes using a button located in the site header.
+                Dark mode is implemented using CSS custom properties, allowing colors such as backgrounds, text,
+                borders, and accents to update dynamically without changing the page structure.
+            </p>
+            <p>
+                This feature enhances usability, demonstrates modern web design practices, and adds personality
+                to the site while maintaining readability and consistency across devices.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tanner-mcmillan-043a56310/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/TannerMc23" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+        </div>
+        <p>©️<span id="currentyear"></span> Casual Video Games Worth Playing | Tanner McMillan</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
