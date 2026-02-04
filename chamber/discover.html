@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/reset.css">
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -41,64 +40,86 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <main class="home-main">
-        <div class="hero">
-            <img src="images/clearfield-hero-banner-2.webp" alt="Clearfield Utah" class="hero-img">
-            <div class="hero-cta">
-                <h1>Where Clearfield Business Thrives.</h1>
-                <a href="#" target="_blank" class="hero-btn">Become a Member</a>
-            </div>
-        </div>
-        <h2>Home</h2>
-        <div class="home-sections-container">
-            <section class="home-events">
-                <h3>Upcoming Events</h3>
-                <article class="event">
-                    <h4>Clearfield Business Expo</h4>
-                    <p><strong>Date:</strong> February 15, 2026</p>
-                    <p><strong>Location:</strong> Clearfield Conference Center</p>
-                    <p>Network with local business owners and explore growth opportunities.</p>
-                </article>
-                <article class="event">
-                    <h4>Chamber Networking Social</h4>
-                    <p><strong>Date:</strong> March 5, 2026</p>
-                    <p><strong>Location:</strong> Main Street Plaza</p>
-                    <p>Meet fellow chamber members and strengthen local connections.</p>
-                </article>
-            </section>
-            <section class="home-weather">
-                <h3>Current Weather</h3>
-                <p id="weather-location">Clearfield, Utah</p>
-                <p id="current-temp">Temperature: -°F</p>
-                <p id="weather-desc">Conditions: -</p>
-                <img id="weather-icon" src="#" alt="Weather Icon" width="50" height="50">
-            </section>
-            <section class="home-forecast">
-                <h3>3-day Forecast</h3>
-                <div class="forecast-cards">
-                    <div class="forecast-day">
-                        <p class="forecast-date">Day</p>
-                        <img src="#" alt="Day 1 Forecast Icon" width="40" height="40">
-                        <p class="forecast-temp">-°F</p>
-                    </div>
-                    <div class="forecast-day">
-                        <p class="forecast-date">Day</p>
-                        <img src="#" alt="Day 2 Forecast Icon" width="40" height="40">
-                        <p class="forecast-temp">-°F</p>
-                    </div>
-                    <div class="forecast-day">
-                        <p class="forecast-date">Day</p>
-                        <img src="#" alt="Day 3 Forecast Icon" width="40" height="40">
-                        <p class="forecast-temp">-°F</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="spotlights">
-            <h3>Member Spotlights</h3>
-            <div class="spotlight-cards"></div>
-        </section>
-    </main>
+    <main class="discover-layout">
+
+  <aside class="discover-sidebar">
+    <h2>Discover Clearfield, Utah</h2>
+
+    <section class="discover-card">
+      <h3>Population</h3>
+      <p>Approximately 32,000 residents</p>
+    </section>
+
+    <section class="discover-card">
+      <h3>Median Household Income</h3>
+      <p>About $74,000 per year</p>
+    </section>
+
+    <section class="discover-card">
+      <h3>Major Industries</h3>
+      <ul>
+        <li>Aerospace & Defense</li>
+        <li>Manufacturing</li>
+        <li>Retail & Small Business</li>
+        <li>Healthcare</li>
+      </ul>
+    </section>
+
+    <section class="discover-card">
+      <h3>Community Events</h3>
+      <p>Clearfield City Farmers Market – Summer Saturdays</p>
+      <p>Fourth of July Celebration & Fireworks</p>
+      <p>North Davis Arts Festival</p>
+    </section>
+
+    <div id="visit-message"></div>
+  </aside>
+
+  <section class="discover-gallery">
+    <h2>Clearfield Highlights</h2>
+
+    <figure>
+      <img src="images/aquatic-center.webp" alt="Clearfield Aquatic Center" loading="lazy">
+      <figcaption>Clearfield Aquatic Center</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/antelope-island.webp" alt="Antelope Island near Clearfield" loading="lazy">
+      <figcaption>Antelope Island State Park</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/downtown-clearfield.webp" alt="Downtown Clearfield Utah" loading="lazy">
+      <figcaption>Downtown Clearfield</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/air-force-museum.webp" alt="Hill Air Force Base Museum" loading="lazy">
+      <figcaption>Hill Air Force Base Museum</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/walking-trail.webp" alt="Clearfield walking trails" loading="lazy">
+      <figcaption>Local Walking & Biking Trails</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/clearfield-library.webp" alt="Clearfield Public Library" loading="lazy">
+      <figcaption>Clearfield City Library</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/clearfield-steed-park.webp" alt="Clearfield Steed Park" loading="lazy">
+      <figcaption>Clearfield Steed Park</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/schneiters-bluff.webp" alt="Schneiter's Bluff Golf Course" loading="lazy">
+      <figcaption>Schneiter's Bluff Golf Course</figcaption>
+    </figure>
+  </section>
+
+</main>
     <footer>
         <div>
             <h2>Clearfield Chamber of Commerce</h2>
