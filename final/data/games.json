@@ -1,0 +1,742 @@
+[
+    {
+        "title": "Stardew Valley",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E10+",
+        "releaseYear": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/68/Stardew_Valley_cover_art.png",
+        "link": "https://www.stardewvalley.net/"
+    },
+    {
+        "title": "Animal Crossing: New Horizons",
+        "genre": "Life Simulation",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2020,
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg",
+        "link": "https://www.nintendo.com/store/products/animal-crossing-new-horizons-switch/"
+    },
+    {
+        "title": "Minecraft",
+        "genre": "Sandbox",
+        "platform": [
+            "PC",
+            "Mobile",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Adjustable",
+        "rating": "E10+",
+        "releaseYear": 2011,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+        "link": "https://www.minecraft.net/"
+    },
+    {
+        "title": "Among Us",
+        "genre": "Party",
+        "platform": [
+            "PC",
+            "Mobile",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E10+",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg",
+        "link": "https://www.innersloth.com/games/among-us/"
+    },
+    {
+        "title": "Journey",
+        "genre": "Adventure",
+        "platform": [
+            "PlayStation",
+            "PC"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2012,
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/77/Journey_PS3_cover.jpg",
+        "link": "https://thatgamecompany.com/journey/"
+    },
+    {
+        "title": "Unpacking",
+        "genre": "Puzzle",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2021,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Unpacking_game_cover.jpg",
+        "link": "https://www.unpackinggame.com/"
+    },
+    {
+        "title": "Slime Rancher",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E10+",
+        "releaseYear": 2017,
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/63/Slime_Rancher_cover_art.jpg",
+        "link": "https://www.slimerancher.com/"
+    },
+    {
+        "title": "Firewatch",
+        "genre": "Narrative Adventure",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Firewatch_cover.jpg",
+        "link": "https://www.firewatchgame.com/"
+    },
+    {
+        "title": "Fall Guys",
+        "genre": "Party",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2020,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/Fall_Guys_cover.jpg",
+        "link": "https://www.fallguys.com/"
+    },
+    {
+        "title": "Dorfromantik",
+        "genre": "Strategy",
+        "platform": [
+            "PC",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2c/Dorfromantik_cover.jpg",
+        "link": "https://dorfromantik-game.com/"
+    },
+    {
+        "title": "The Sims 4",
+        "genre": "Life Simulation",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2014,
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/1d/The_Sims_4_cover_art.jpg",
+        "link": "https://www.ea.com/games/the-sims/the-sims-4"
+    },
+    {
+        "title": "Spiritfarer",
+        "genre": "Adventure",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2020,
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Spiritfarer_cover.jpg",
+        "link": "https://thunderlotusgames.com/spiritfarer/"
+    },
+    {
+        "title": "A Short Hike",
+        "genre": "Exploration",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/06/A_Short_Hike_cover.jpg",
+        "link": "https://ashorthike.com/"
+    },
+    {
+        "title": "Fortnite",
+        "genre": "Battle Royale",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch",
+            "Mobile"
+        ],
+        "difficulty": "Medium",
+        "rating": "T",
+        "releaseYear": 2017,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/09/Fortnite_cover_art.png",
+        "link": "https://www.epicgames.com/fortnite"
+    },
+    {
+        "title": "Tetris Effect",
+        "genre": "Puzzle",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Tetris_Effect_cover.jpg",
+        "link": "https://tetriseffect.game/"
+    },
+    {
+        "title": "Coffee Talk",
+        "genre": "Visual Novel",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2020,
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Coffee_Talk_cover.jpg",
+        "link": "https://www.coffeetalkgame.com/"
+    },
+    {
+        "title": "PowerWash Simulator",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/f0/PowerWash_Simulator_cover.jpg",
+        "link": "https://www.powerwashsimulator.com/"
+    },
+    {
+        "title": "Overcooked",
+        "genre": "Co-op",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Medium",
+        "rating": "E",
+        "releaseYear": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/en/e/ea/Overcooked_cover.jpg",
+        "link": "https://www.team17.com/games/overcooked/"
+    },
+    {
+        "title": "Celeste",
+        "genre": "Platformer",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Hard",
+        "rating": "E10+",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/b/b1/Celeste_cover.jpg",
+        "link": "http://www.celestegame.com/"
+    },
+    {
+        "title": "Mini Motorways",
+        "genre": "Strategy",
+        "platform": [
+            "PC",
+            "Switch",
+            "Mobile"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2021,
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/49/Mini_Motorways_cover.jpg",
+        "link": "https://dinofarmgames.com/games/mini-motorways/"
+    },
+    {
+        "title": "Katamari Damacy Reroll",
+        "genre": "Action",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/01/Katamari_Damacy_Reroll_cover.jpg",
+        "link": "https://store.steampowered.com/app/960090/Katamari_Damacy_Reroll/"
+    },
+    {
+        "title": "Life is Strange",
+        "genre": "Narrative Adventure",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "M",
+        "releaseYear": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/c0/Life_is_Strange_cover.jpg",
+        "link": "https://lifeisstrange.square-enix-games.com/en-us/"
+    },
+    {
+        "title": "LittleBigPlanet 3",
+        "genre": "Platformer",
+        "platform": [
+            "PlayStation"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2014,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/LittleBigPlanet_3_cover.jpg",
+        "link": "https://www.playstation.com/en-us/games/littlebigplanet-3/"
+    },
+    {
+        "title": "No Man’s Sky",
+        "genre": "Exploration",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "T",
+        "releaseYear": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/No_Mans_Sky_cover_art.jpg",
+        "link": "https://www.nomanssky.com/"
+    },
+    {
+        "title": "Pokémon Scarlet",
+        "genre": "RPG",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/3c/Pokemon_Scarlet_Violet.jpg",
+        "link": "https://www.pokemon.com/us/pokemon-video-games/pokemon-scarlet-and-pokemon-violet/"
+    },
+    {
+        "title": "Oxenfree",
+        "genre": "Narrative Adventure",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2b/Oxenfree_cover.jpg",
+        "link": "https://nightschoolstudio.com/games/oxenfree"
+    },
+    {
+        "title": "Gris",
+        "genre": "Art Platformer",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/5b/Gris_cover_art.jpg",
+        "link": "https://www.deadsalicestudios.com/gris"
+    },
+    {
+        "title": "Papers, Please",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "Mobile"
+        ],
+        "difficulty": "Medium",
+        "rating": "T",
+        "releaseYear": 2013,
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/cb/Papers_Please_cover.jpg",
+        "link": "http://papersplea.se/"
+    },
+    {
+        "title": "Dave the Diver",
+        "genre": "Adventure",
+        "platform": [
+            "PC",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E10+",
+        "releaseYear": 2023,
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/26/Dave_the_Diver_cover.jpg",
+        "link": "https://www.davethedivergame.com/"
+    },
+    {
+        "title": "Cult of the Lamb",
+        "genre": "Roguelike",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Medium",
+        "rating": "T",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/7b/Cult_of_the_Lamb_cover.jpg",
+        "link": "https://www.cultofthelamb.com/"
+    },
+    {
+        "title": "Disney Dreamlight Valley",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Disney_Dreamlight_Valley_cover.jpg",
+        "link": "https://www.disneydreamlightvalley.com/"
+    },
+    {
+        "title": "Terraria",
+        "genre": "Sandbox",
+        "platform": [
+            "PC",
+            "Mobile",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E10+",
+        "releaseYear": 2011,
+        "image": "https://upload.wikimedia.org/wikipedia/en/9/9a/Terraria_cover.jpg",
+        "link": "https://terraria.org/"
+    },
+    {
+        "title": "Lake",
+        "genre": "Narrative Adventure",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2021,
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/Lake_cover.jpg",
+        "link": "https://lakethegame.com/"
+    },
+    {
+        "title": "House Flipper",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/1e/House_Flipper_cover.jpg",
+        "link": "https://houseflippergame.com/"
+    },
+    {
+        "title": "Portal 2",
+        "genre": "Puzzle",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Medium",
+        "rating": "E10+",
+        "releaseYear": 2011,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/f9/Portal2_cover.jpg",
+        "link": "https://www.thinkwithportals.com/"
+    },
+    {
+        "title": "Raft",
+        "genre": "Survival",
+        "platform": [
+            "PC"
+        ],
+        "difficulty": "Medium",
+        "rating": "E10+",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/e/e4/Raft_cover.jpg",
+        "link": "https://raft-game.com/"
+    },
+    {
+        "title": "Subnautica",
+        "genre": "Survival",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "T",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Subnautica_cover.jpg",
+        "link": "https://unknownworlds.com/subnautica/"
+    },
+    {
+        "title": "Cities: Skylines",
+        "genre": "Simulation",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E",
+        "releaseYear": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Cities_Skylines_cover.jpg",
+        "link": "https://www.paradoxinteractive.com/games/cities-skylines/about"
+    },
+    {
+        "title": "Donut County",
+        "genre": "Puzzle",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/cd/Donut_County_cover.jpg",
+        "link": "https://www.donutcountygame.com/"
+    },
+    {
+        "title": "Tetris 99",
+        "genre": "Puzzle",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E",
+        "releaseYear": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/f8/Tetris_99_cover.jpg",
+        "link": "https://www.nintendo.com/games/detail/tetris-99-switch/"
+    },
+    {
+        "title": "Fortnite Creative",
+        "genre": "Sandbox",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch",
+            "Mobile"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2020,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/09/Fortnite_cover_art.png",
+        "link": "https://www.epicgames.com/fortnite/creative"
+    },
+    {
+        "title": "Mario Kart 8 Deluxe",
+        "genre": "Racing",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2017,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Mario_Kart_8_Deluxe.jpg",
+        "link": "https://www.nintendo.com/store/products/mario-kart-8-deluxe-switch/"
+    },
+    {
+        "title": "Ring Fit Adventure",
+        "genre": "Fitness",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E",
+        "releaseYear": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/65/Ring_Fit_Adventure_cover.jpg",
+        "link": "https://www.nintendo.com/games/detail/ring-fit-adventure-switch/"
+    },
+    {
+        "title": "Pokemon Legends: Arceus",
+        "genre": "RPG",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E10+",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/Pokemon_Legends_Arceus_cover.jpg",
+        "link": "https://www.pokemon.com/us/pokemon-video-games/pokemon-legends-arceus/"
+    },
+    {
+        "title": "Slay the Spire",
+        "genre": "Card Game",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox",
+            "Mobile"
+        ],
+        "difficulty": "Medium",
+        "rating": "T",
+        "releaseYear": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/c7/Slay_the_Spire_cover.jpg",
+        "link": "https://www.megacrit.com/"
+    },
+    {
+        "title": "Hollow Knight",
+        "genre": "Metroidvania",
+        "platform": [
+            "PC",
+            "Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "difficulty": "Hard",
+        "rating": "E10+",
+        "releaseYear": 2017,
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/3a/Hollow_Knight_cover.jpg",
+        "link": "https://www.teamcherry.com.au/"
+    },
+    {
+        "title": "Ori and the Blind Forest",
+        "genre": "Platformer",
+        "platform": [
+            "PC",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E",
+        "releaseYear": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/en/6/6d/Ori_and_the_Blind_Forest_cover.jpg",
+        "link": "https://www.orithegame.com/"
+    },
+    {
+        "title": "Yoshi’s Crafted World",
+        "genre": "Platformer",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/49/Yoshis_Crafted_World_cover.jpg",
+        "link": "https://www.nintendo.com/store/products/yoshis-crafted-world-switch/"
+    },
+    {
+        "title": "Splatoon 3",
+        "genre": "Shooter",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Medium",
+        "rating": "E10+",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2b/Splatoon_3_cover.jpg",
+        "link": "https://www.nintendo.com/store/products/splatoon-3-switch/"
+    },
+    {
+        "title": "Kirby and the Forgotten Land",
+        "genre": "Platformer",
+        "platform": [
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2022,
+        "image": "https://upload.wikimedia.org/wikipedia/en/c/c5/Kirby_and_the_Forgotten_Land_cover.jpg",
+        "link": "https://www.nintendo.com/store/products/kirby-and-the-forgotten-land-switch/"
+    },
+    {
+        "title": "Spirit of the North",
+        "genre": "Adventure",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch"
+        ],
+        "difficulty": "Easy",
+        "rating": "E",
+        "releaseYear": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Spirit_of_the_North_cover.jpg",
+        "link": "https://www.spirithn.com/"
+    },
+    {
+        "title": "Fortnite Party Royale",
+        "genre": "Party",
+        "platform": [
+            "PC",
+            "PlayStation",
+            "Xbox",
+            "Switch",
+            "Mobile"
+        ],
+        "difficulty": "Easy",
+        "rating": "T",
+        "releaseYear": 2020,
+        "image": "https://upload.wikimedia.org/wikipedia/en/0/09/Fortnite_cover_art.png",
+        "link": "https://www.epicgames.com/fortnite/party-royale"
+    }
+]
