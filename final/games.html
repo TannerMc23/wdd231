@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Video Games Worth Playing | Top Games</title>
+    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | Top Games Page">
+    <meta name="author" content="Tanner McMillan">
+    <meta property="og:title" content="Facebook">
+    <meta property="og:description"
+        content="Facebook profile for Tanner McMillan. Shows who I am and the many memories I have made.">
+    <meta property="og:image" content="images/facebook.svg">
+    <meta property="url" content="https://www.facebook.com/tanner.mcmillan.395/">
+    <link rel="icon" href="images/controller.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/year.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/wayfinding.js" defer></script>
+    <script src="scripts/games.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="index.html">Casual Video Games</a>
+            </h1>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                🌙 Dark Mode
+            </button>
+            <button id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <nav id="siteNav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="games.html" class="nav-link">Top Games</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="subscribe.html" class="nav-link">Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Filter & Sort Games</h2>
+            <div class="filter-controls">
+                <label>
+                    Genre:
+                    <select id="filter-genre">
+                        <option value="all">All</option>
+                    </select>
+                </label>
+                <label>
+                    Platform:
+                    <select id="filter-platform">
+                        <option value="all">All</option>
+                    </select>
+                </label>
+                <label>
+                    Rating:
+                    <select id="filter-rating">
+                        <option value="all">All</option>
+                        <option value="E">E</option>
+                        <option value="E10+">E10+</option>
+                        <option value="T">T</option>
+                        <option value="M">M</option>
+                    </select>
+                </label>
+                <label>
+                    Difficulty:
+                    <select id="filter-difficulty">
+                        <option value="all">All</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </label>
+                <label>
+                    Sort by Release Year:
+                    <select id="sort-year">
+                        <option value="desc">Newest First</option>
+                        <option value="asc">Oldest First</option>
+                    </select>
+                </label>
+            </div>
+        </section>
+        
+        <section id="games-container" class="game-cards">
+
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tanner-mcmillan-043a56310/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/TannerMc23" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+        </div>
+        <p>©️<span id="currentYear"></span> Casual Video Games Worth Playing | Tanner McMillan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
