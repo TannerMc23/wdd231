@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Video Games Worth Playing | Home</title>
-    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | Home Page">
+    <title>Casual Video Games Worth Playing | About</title>
+    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | About Page">
     <meta name="author" content="Tanner McMillan">
     <meta property="og:title" content="Facebook">
     <meta property="og:description"
@@ -28,7 +28,23 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/wayfinding.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 </head>
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="modal-close" id="closeModal">&times;</button>
+
+        <h2>How Casual Game Finder Works</h2>
+        <p>
+            Game data is stored in a local JSON file and loaded dynamically using JavaScript.
+            Filters allow users to narrow results based on their preferences.
+        </p>
+        <p>
+            Your theme preference and subscription information are stored using LocalStorage,
+            providing a more personalized experience.
+        </p>
+    </div>
+</div>
 
 <body>
     <header>
@@ -52,9 +68,49 @@
             </nav>
         </div>
     </header>
-    <main>
-
+    <main class="about-page">
+        <section class="about-intro">
+            <h1>About Casual Game Finder</h1>
+            <p>
+                Casual Game Finder is a curated collection of games designed to help players
+                quickly discover games that fit their play style, platform, and experience level.
+            </p>
+        </section>
+    
+        <section class="about-details">
+            <div class="about-card">
+                <h2>Why This Site Exists</h2>
+                <p>
+                    With so many games available today, finding the right one can be overwhelming.
+                    This project focuses on clarity, simplicity, and accessibility.
+                </p>
+            </div>
+    
+            <div class="about-card">
+                <h2>What You Can Do</h2>
+                <ul>
+                    <li>Browse a large collection of games</li>
+                    <li>Filter by platform, genre, difficulty, and rating</li>
+                    <li>Save preferences and explore featured picks</li>
+                </ul>
+            </div>
+    
+            <div class="about-card">
+                <h2>Project Details</h2>
+                <p>
+                    This website was built as part of a web development course using
+                    semantic HTML, responsive CSS, and JavaScript.
+                </p>
+    
+                <button class="cta-button" id="openModal">
+                    How It Works
+                </button>
+            </div>
+        </section>
     </main>
+
+
+
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg"

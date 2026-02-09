@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Video Games Worth Playing | Home</title>
-    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | Home Page">
+    <title>Casual Video Games Worth Playing | Subscribe</title>
+    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | Subscribe Page">
     <meta name="author" content="Tanner McMillan">
     <meta property="og:title" content="Facebook">
     <meta property="og:description"
@@ -28,6 +28,7 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/wayfinding.js" defer></script>
+    <script src="scripts/subscribe.js" defer></script>
 </head>
 
 <body>
@@ -53,8 +54,55 @@
         </div>
     </header>
     <main>
-
+        <section>
+            <h2>Subscribe for Casual Game Picks</h2>
+            <p>
+                Want a curated list of casual-friendly games delivered straight to your inbox?
+                Sign up below to receive occasional updates with recommended games that are
+                easy to play and fun to enjoy.
+            </p>
+        </section>
+    
+        <section>
+            <h2>Join the List</h2>
+            <form action="thankyou.html" method="get" class="subscribe-form">
+                <label>
+                    Full Name
+                    <input type="text" name="name" required>
+                </label>
+    
+                <label>
+                    Email Address
+                    <input type="email" name="email" required>
+                </label>
+    
+                <label>
+                    Favorite Platform
+                    <select name="platform">
+                        <option value="Any">Any</option>
+                        <option value="PC">PC</option>
+                        <option value="Console">Console</option>
+                        <option value="Mobile">Mobile</option>
+                    </select>
+                </label>
+    
+                <label>
+                    Preferred Game Style
+                    <select name="style">
+                        <option value="Relaxing">Relaxing</option>
+                        <option value="Casual Multiplayer">Casual Multiplayer</option>
+                        <option value="Story-Based">Story-Based</option>
+                        <option value="Puzzle">Puzzle</option>
+                    </select>
+                </label>
+    
+                <button type="submit" class="cta-button">
+                    Subscribe
+                </button>
+            </form>
+        </section>
     </main>
+
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg"

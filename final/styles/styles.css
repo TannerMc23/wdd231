@@ -130,6 +130,237 @@ nav#siteNav ul {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
+/* ----------------------------------------------------------------------------------
+   Home Page
+---------------------------------------------------------------------------------- */
+
+.hero {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.05rem;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+.features-list li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* ===========================
+   Subscribe & Thank You Pages
+=========================== */
+
+.subscribe-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: grid;
+    gap: 1.25rem;
+}
+
+.subscribe-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 0.4rem;
+}
+
+.subscribe-form input,
+.subscribe-form select {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    font-size: 1rem;
+}
+
+.subscribe-form input:focus,
+.subscribe-form select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+/* CTA button already exists — enhance slightly */
+.subscribe-form .cta-button {
+    margin-top: 1rem;
+    align-self: start;
+}
+
+/* Thank You page highlight box */
+#submissionDetails {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.75rem;
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    border-left: 5px solid var(--color-accent);
+}
+
+#submissionDetails p {
+    margin: 0.75rem 0;
+    font-size: 1.05rem;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .subscribe-form,
+body.dark-mode #submissionDetails {
+    background-color: var(--color-card-bg-dark);
+}
+
+/* ===========================
+   About Page Layout
+=========================== */
+
+.about-page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-details {
+    display: grid;
+    gap: 2rem;
+}
+
+.about-card {
+    background-color: var(--color-card-bg);
+    padding: 1.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+}
+
+.about-card ul {
+    padding-left: 1.25rem;
+}
+
+.about-card li {
+    margin: 0.5rem 0;
+}
+
+/* ===========================
+   Modal Styles
+=========================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal {
+    background-color: #ffffff;
+    color: #111827;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 12px;
+    position: relative;
+    animation: modalFadeIn 0.25s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+}
+
+.modal p {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+body.dark .modal {
+    background-color: #1e293b;
+    color: #e5e7eb;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Dark Mode Support */
+body.dark-mode .modal,
+body.dark-mode .about-card {
+    background-color: var(--color-card-bg-dark);
+}
 
 /* ----------------------------------------------------------------------------------
    Footer
@@ -175,7 +406,7 @@ footer .social img {
     gap: 1.5rem;
     /* Reduced spacing for text-only cards */
     margin-top: 1.5rem;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
 }
 
 /* -----------------------------Individual Game Card Refinements------------------------------ */
@@ -186,7 +417,7 @@ footer .social img {
     padding: 1.25rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
-    min-height: 150px;
+    min-height: 220px;
     /* Keeps cards tall enough but compact */
     display: flex;
     flex-direction: column;
@@ -194,10 +425,16 @@ footer .social img {
     /* Even spacing for text + link */
 }
 
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
 /* -----------------------------Card Content Text------------------------------ */
 .game-card h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
     color: var(--primary-color);
 }
 
@@ -211,7 +448,7 @@ body.dark .game-card h3 {
 }
 
 .game-card p {
-    margin: 0.2rem 0;
+    margin-bottom: 0.4rem;
     font-size: 0.95rem;
     color: var(--text-color);
 }
@@ -219,7 +456,7 @@ body.dark .game-card h3 {
 /* -----------------------------Game Link Button------------------------------ */
 .game-card a {
     display: inline-block;
-    margin-top: 0.5rem;
+    margin-top: auto;
     padding: 0.35rem 0.8rem;
     background-color: var(--secondary-color);
     color: white;
@@ -247,8 +484,29 @@ body.dark .game-card a:hover {
 .filters {
     background-color: white;
     padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
+}
+
+.filter-controls label {
+    font-weight: 600;
+    gap: 0.25rem;
+}
+
+.filter-controls select {
+    padding: 0.45rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-controls select:hover,
+.filter-controls select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+    outline: none;
 }
 
 /* Dark Mode Filters */
@@ -269,11 +527,18 @@ body.dark .filter-controls select {
     color: #E5E7EB;
     border: 1px solid #374151;
 }
+
+body.dark .filter-controls select:hover,
+body.dark .filter-controls select:focus {
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.25);
+}
 /* -----------------------------Responsive Grid Adjustments------------------------------ */
 @media(min-width: 600px) {
     .game-cards {
         grid-template-columns: repeat(2, 1fr);
         /* Tablet: 2 columns */
+        gap: 1.75rem;
+        padding: 0;
     }
 }
 
@@ -281,6 +546,7 @@ body.dark .filter-controls select {
     .game-cards {
         grid-template-columns: repeat(3, 1fr);
         /* Desktop: 3 columns */
+        gap: 2rem;
     }
 }
 

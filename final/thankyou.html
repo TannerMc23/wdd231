@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casual Video Games Worth Playing | Home</title>
-    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | Home Page">
+    <title>Casual Video Games Worth Playing | Thank You</title>
+    <meta name="description" content="Casual Video Games Worth Playing | Wdd231 | Tanner McMillan | Thank You Page">
     <meta name="author" content="Tanner McMillan">
     <meta property="og:title" content="Facebook">
     <meta property="og:description"
@@ -28,6 +28,7 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/theme.js" defer></script>
     <script src="scripts/wayfinding.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -53,8 +54,28 @@
         </div>
     </header>
     <main>
-
+        <section>
+            <h2>Thank You for Subscribing!</h2>
+            <p>
+                We're excited to have you on the list. Here’s a summary of your submission:
+            </p>
+        </section>
+    
+        <section id="submissionDetails">
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Preferred Platform:</strong> <span id="displayPlatform"></span></p>
+            <p><strong>Game Style:</strong> <span id="displayStyle"></span></p>
+        </section>
+    
+        <section class="cta">
+            <p>
+                Want to explore some games right now?
+            </p>
+            <a href="games.html" class="cta-button">View Top Games</a>
+        </section>
     </main>
+
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/tanner.mcmillan.395/" target="_blank"><img src="images/facebook.svg"
