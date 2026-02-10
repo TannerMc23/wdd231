@@ -32,22 +32,6 @@
     <script src="scripts/wayfinding.js" defer></script>
     <script src="scripts/modal.js" defer></script>
 </head>
-<div class="modal-overlay" id="modalOverlay">
-    <div class="modal">
-        <button class="modal-close" id="closeModal">&times;</button>
-
-        <h2>How Casual Game Finder Works</h2>
-        <p>
-            Game data is stored in a local JSON file and loaded dynamically using JavaScript.
-            Filters allow users to narrow results based on their preferences.
-        </p>
-        <p>
-            Your theme preference and subscription information are stored using LocalStorage,
-            providing a more personalized experience.
-        </p>
-    </div>
-</div>
-
 <body>
     <header>
         <div class="header-inner">
@@ -110,7 +94,21 @@
             </div>
         </section>
     </main>
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="modal-close" id="closeModal">&times;</button>
 
+        <h2>How Casual Game Finder Works</h2>
+        <p>
+            Game data is stored in a local JSON file and loaded dynamically using JavaScript.
+            Filters allow users to narrow results based on their preferences.
+        </p>
+        <p>
+            Your theme preference and subscription information are stored using LocalStorage,
+            providing a more personalized experience.
+        </p>
+    </div>
+</div>
 
 
     <footer>
