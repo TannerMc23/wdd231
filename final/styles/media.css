@@ -38,5 +38,6 @@
 
     nav#siteNav ul {
         flex-direction: column;
+        gap: 1rem;
     }
 }

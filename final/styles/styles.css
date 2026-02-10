@@ -51,6 +51,11 @@ section {
 /* ----------------------------------------------------------------------------------
    Header + Navigation
 ---------------------------------------------------------------------------------- */
+header,
+header a {
+    color: white;
+}
+
 header {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -114,8 +119,9 @@ nav#siteNav.open {
 }
 
 nav#siteNav ul {
-    flex-direction: column;
-    gap: 1rem;
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
 }
 
 /* ----------------------------------------------------------------------------------
@@ -157,7 +163,7 @@ nav#siteNav ul {
 .hero-button {
     display: inline-block;
     padding: 0.6rem 1.2rem;
-    background-color: var(--secondary-color);
+    background-color: #1D4ED8;
     color: white;
     text-decoration: none;
     border-radius: 6px;
