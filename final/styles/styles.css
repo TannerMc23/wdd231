@@ -7,6 +7,8 @@
     --background-color: #F9FAFB;
     --text-color: #111827;
     --border-color: #E5E7EB;
+    --color-card-bg: #ffffff;
+    --color-card-bg-dark: #1e293b;
 }
 
 /* Dark Mode Overrides */
@@ -130,6 +132,7 @@ nav#siteNav.open {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
+
 /* ----------------------------------------------------------------------------------
    Home Page
 ---------------------------------------------------------------------------------- */
@@ -300,6 +303,7 @@ body.dark-mode #submissionDetails {
     align-items: center;
     justify-content: center;
     z-index: 200;
+    color: transparent;
 }
 
 .modal-overlay.open {
