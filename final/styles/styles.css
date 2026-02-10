@@ -381,23 +381,6 @@ footer .social img {
     margin: 0 0.4rem;
 }
 
-/* ----------------------------------------------------------------------------------
-   Responsive Breakpoints
----------------------------------------------------------------------------------- */
-@media (max-width: 768px) {
-    nav#siteNav {
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    #menuToggle {
-        display: block;
-    }
-
-    nav#siteNav ul {
-        flex-direction: column;
-    }
-}
 /* -----------------------------Game Cards Container------------------------------ */
 .game-cards {
     display: grid;
@@ -531,28 +514,4 @@ body.dark .filter-controls select {
 body.dark .filter-controls select:hover,
 body.dark .filter-controls select:focus {
     box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.25);
-}
-/* -----------------------------Responsive Grid Adjustments------------------------------ */
-@media(min-width: 600px) {
-    .game-cards {
-        grid-template-columns: repeat(2, 1fr);
-        /* Tablet: 2 columns */
-        gap: 1.75rem;
-        padding: 0;
-    }
-}
-
-@media(min-width: 900px) {
-    .game-cards {
-        grid-template-columns: repeat(3, 1fr);
-        /* Desktop: 3 columns */
-        gap: 2rem;
-    }
-}
-
-@media(min-width: 1200px) {
-    .game-cards {
-        grid-template-columns: repeat(4, 1fr);
-        /* Large screens: 4 columns */
-    }
 }
